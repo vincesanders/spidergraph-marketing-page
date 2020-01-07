@@ -185,11 +185,20 @@ a {
 .container {
   width: 100%;
   margin: 0 auto;
+  background-image: url(../img/circle-overlay.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 .container .inner {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 1050px) {
+  .container .inner {
+    width: 85%;
+  }
 }
 .navbar {
   display: flex;
@@ -219,7 +228,7 @@ nav {
   padding: 2% 0%;
 }
 header {
-  margin: 3% 0% 10% 0%;
+  margin: 3% 0% 11% 0%;
   text-align: center;
   width: 100%;
 }
@@ -242,6 +251,53 @@ header h3 {
   letter-spacing: 0.3px;
   line-height: 48px;
 }
+.green-ball {
+  position: absolute;
+  height: 32vh;
+  width: 17%;
+  left: 75%;
+  top: 75%;
+}
+@media (max-width: 1300px) {
+  .green-ball {
+    left: 80%;
+    top: 65%;
+    height: 29vh;
+  }
+}
+@media (max-width: 1050px) {
+  .green-ball {
+    left: 80%;
+    top: 63%;
+    height: 25vh;
+  }
+}
+@media (max-width: 960px) {
+  .green-ball {
+    left: 80%;
+    top: 59%;
+    height: 23vh;
+  }
+}
+@media (max-width: 860px) {
+  .green-ball {
+    left: 80%;
+    top: 58%;
+    height: 21vh;
+  }
+}
+@media (max-width: 800px) {
+  .green-ball {
+    left: 80%;
+    top: 52%;
+    height: 19vh;
+  }
+}
+@media (max-width: 720px) {
+  .green-ball {
+    display: none;
+  }
+}
 .cta-btn {
   background-color: #4054B2;
   border-radius: 5px;
@@ -251,33 +307,223 @@ header h3 {
   border: 1px solid #4054B2;
   border-radius: 5px;
   color: #4054B2;
+  background-color: white;
 }
 #about {
   background-color: #ECEEF7;
-  padding: 4% 0%;
+  padding: 7% 0%;
 }
 #team {
-  padding: 4% 0%;
-  margin-bottom: 18%;
+  padding: 3% 0% 7% 0%;
+}
+.profiles {
+  display: flex;
+  width: 100%;
+  padding: 3% 0%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+.profiles a {
+  width: 25%;
+  padding: 2%;
+  text-decoration: none;
 }
 .headshot {
-  width: 15%;
+  width: 100%;
   height: 28vh;
   border-radius: 50%;
 }
 .headshot.one {
-  position: absolute;
-  width: 14%;
-  left: 200px;
-  right: 0%;
-  top: 1400px;
-  bottom: 0;
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.one h3,
+.headshot.one p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.one:hover {
+  opacity: 0.8;
+}
+.headshot.one:hover h3,
+.headshot.one:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.two {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.two h3,
+.headshot.two p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.two:hover {
+  opacity: 0.8;
+}
+.headshot.two:hover h3,
+.headshot.two:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.three {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.three h3,
+.headshot.three p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.three:hover {
+  opacity: 0.8;
+}
+.headshot.three:hover h3,
+.headshot.three:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.four {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.four h3,
+.headshot.four p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.four:hover {
+  opacity: 0.8;
+}
+.headshot.four:hover h3,
+.headshot.four:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.five {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.five h3,
+.headshot.five p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.five:hover {
+  opacity: 0.8;
+}
+.headshot.five:hover h3,
+.headshot.five:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.six {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.six h3,
+.headshot.six p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.six:hover {
+  opacity: 0.8;
+}
+.headshot.six:hover h3,
+.headshot.six:hover p {
+  visibility: visible;
+  text-decoration: none;
+}
+.headshot.seven {
+  background-image: url(../img/placehold.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.seven h3,
+.headshot.seven p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.seven:hover {
+  opacity: 0.8;
+}
+.headshot.seven:hover h3,
+.headshot.seven:hover p {
+  visibility: visible;
+  text-decoration: none;
 }
 .headshot.eight {
-  position: absolute;
-  width: 16%;
-  left: 500px;
-  right: 0%;
-  top: 1500px;
-  bottom: 0;
+  background-image: url(../img/team/me.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-decoration: none;
+}
+.headshot.eight h3,
+.headshot.eight p {
+  visibility: hidden;
+  color: white;
+}
+.headshot.eight:hover {
+  opacity: 0.8;
+}
+.headshot.eight:hover h3,
+.headshot.eight:hover p {
+  visibility: visible;
+  text-decoration: none;
 }

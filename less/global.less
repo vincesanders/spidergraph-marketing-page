@@ -63,10 +63,17 @@
   .container {
     width: 100%;
     margin: 0 auto;
+    background-image: url(../img/circle-overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     .inner {
       max-width: 960px;
       width: 100%;
       margin: 0 auto;
+      @media (max-width: 1050px){
+        width: 85%;
+    }
     }
   }
 

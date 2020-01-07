@@ -28,7 +28,7 @@ header {
     height: 32vh;
     width: 17%;
     left: 75%;
-    top: 75%;
+    top: 77%;
     @media (max-width: 1300px){
         left: 80%;
         top: 65%;
@@ -77,123 +77,169 @@ header {
     padding: 7% 0%;
 }
 
-// .new-bg {
-//     position: absolute;
-//     left: -170.69%;
-//     right: 26.84%;
-//     top: -6.55%;
-//     bottom: -16.72%;
-//     border: 0.4px solid rgba(130, 130, 130, 0.4);
-// }
-
 #team {
     padding: 3% 0% 7% 0%;
+    h2{
+        padding-bottom: 5%;
+    }
 }
 
 .profiles {
     display: flex;
     width: 100%;
-    padding: 3% 0%;
+    padding: 3% 0% 15% 0%; 
     margin: 0 auto;
     justify-content: space-between;
     align-items: space-between;
     flex-wrap: wrap;
     a{
         width:25%;
-        padding: 2%;
         text-decoration: none;
+        @media (max-width: 550px) {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+    }
+
+    @media (max-width: 550px){
+        flex-flow: nowrap column;
     }
 }
 
 .headshot {
-    width: 100%;
-    height: 28vh;
+    width: 80%;
+    height: 25vh;
     border-radius: 50%;
+    border: 2px solid @main-color;
+
+    @media (max-width: 850px){
+        height: 20vh;
+    }
+
+    @media (max-width: 680px){
+        height: 17vh;
+    }
+
+    @media (max-width: 550px){
+        &.one{
+            background-image: url(../img/team/shota-hs.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.two{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.three{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.four{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.five{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.six{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.seven{
+            background-image: url(../img/placehold.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+        &.eight{
+            background-image: url(../img/team/me.jpg);
+            width: 75%;
+            margin: 3% auto;
+            height: 35vh;
+            .setProfiles();
+        }
+    }
+
+    @media (min-width: 550px){
 
     &.one{
         position: relative;
-        // width: 12%;
-        left: 18%;
-        // right: 0%;
-        // top: 231%;
-        // bottom: 0;
+        left: 0%;
+        right: 45%;
+        top: -20%;
         background-image: url(../img/team/shota-hs.jpg);
         .setProfiles();
     }
     &.two{
-        // position: absolute;
-        // width: 12%;
-        // left: 44%;
-        // right: 0%;
-        // top: 250%;
-        // bottom: 0;
+        position: relative;
+        left: 30%;
+        top: -50%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.three{
-        // position: absolute;
-        // width: 12%;
-        // left: 74%;
-        // right: 0%;
-        // top: 236%;
-        // bottom: 0;
+        position: relative;
+        left: 30%;
+        top: 15%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.four{
-        // position: absolute;
-        // width: 12%;
-        // left: 24%;
-        // right: 0%;
-        // top: 278%;
-        // bottom: 0;
+        position: relative;
+        left: 44%;
+        top: -50%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.five{
-        // position: absolute;
-        // visibility: hidden;
-        // width: 12%;
-        // left: 57%;
-        // right: 0%;
-        // top: 288%;
-        // bottom: 0;
+        position: relative;
+        left: -30%;
+        top: 50%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.six{
-        // position: absolute;
-        // visibility: hidden;
-        // width: 12%;
-        // left: 30%;
-        // right: 0%;
-        // top: 276%;
-        // bottom: 0;
+        position: relative;
+        left: -10%;
+        top: 25%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.seven{
-        // position: absolute;
-        // visibility: hidden;
-        // width: 12%;
-        // left: 60%;
-        // right: 0%;
-        // top: 260%;
-        // bottom: 0;
+        position: relative;
+        left: 10%;
+        top: 80%;
         background-image: url(../img/placehold.jpg);
         .setProfiles();
     }
     &.eight{
-        // position: absolute;
-        // visibility: hidden;
-        // width: 14%;
-        // left: 40%;
-        // right: 0%;
-        // top: 230%;
-        // bottom: 0;
+        position: relative;
+        left: 30%;
+        top: 35%;
         background-image: url(../img/team/me.jpg);
         .setProfiles();
     }
+} //min-width
   }
 
   .prof-pic {
@@ -204,4 +250,14 @@ header {
 
   .profile-section {
       padding-bottom: 6%;
+  }
+
+  i {
+      font-size: 3.2rem;
+      color: @main-color;
+      padding: 3%;
+
+      &:hover{
+          color: @page-elements;
+      }
   }

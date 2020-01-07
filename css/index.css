@@ -336,7 +336,9 @@ header h3 {
   border-radius: 50%;
 }
 .headshot.one {
-  background-image: url(../img/placehold.jpg);
+  position: relative;
+  left: 18%;
+  background-image: url(../img/team/shota-hs.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -526,4 +528,12 @@ header h3 {
 .headshot.eight:hover p {
   visibility: visible;
   text-decoration: none;
+}
+.prof-pic {
+  width: 35%;
+  border-radius: 50%;
+  margin-bottom: 3%;
+}
+.profile-section {
+  padding-bottom: 6%;
 }

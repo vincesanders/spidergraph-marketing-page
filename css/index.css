@@ -4618,6 +4618,7 @@ img {
 a {
   color: #4054B2;
   font-weight: 600;
+  text-decoration: none;
 }
 .container {
   width: 100%;
@@ -4675,10 +4676,11 @@ header .banner-btns {
   width: 60%;
   margin: 0 auto;
 }
-header .banner-btns div {
+header .banner-btns a {
   width: 100%;
   padding: 2% 7%;
   margin: 4% 2% 5% 2%;
+  text-decoration: none;
 }
 header h1 {
   padding: 3% 0% 5% 0%;
@@ -4748,7 +4750,7 @@ header h3 {
 }
 #about {
   background-color: #ECEEF7;
-  padding: 7% 0%;
+  padding: 5% 0% 7% 0%;
 }
 #team {
   padding: 3% 0% 7% 0%;
@@ -4826,7 +4828,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.two {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/laura-giron-crop.gif);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -4854,7 +4856,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.three {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/patrick-roach.jpg);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -4882,7 +4884,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.four {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/vincent-sanders.JPG);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -4910,7 +4912,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.five {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/phil-maceachron.jpg);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -4938,7 +4940,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.six {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/logan-reber.jpg);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -5056,7 +5058,7 @@ header h3 {
     position: relative;
     left: 30%;
     top: -50%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/laura-giron-crop.gif);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5084,7 +5086,7 @@ header h3 {
     position: relative;
     left: 30%;
     top: 15%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/patrick-roach.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5112,7 +5114,7 @@ header h3 {
     position: relative;
     left: 44%;
     top: -50%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/vincent-sanders.JPG);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5140,7 +5142,7 @@ header h3 {
     position: relative;
     left: -30%;
     top: 50%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/phil-maceachron.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5168,7 +5170,7 @@ header h3 {
     position: relative;
     left: -10%;
     top: 25%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/logan-reber.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5253,7 +5255,7 @@ header h3 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 300%;
+  width: 100vw;
   height: 100vh;
 }
 .sidebar {
@@ -5261,41 +5263,79 @@ header h3 {
   flex-direction: column;
   background-color: #4054B2;
   padding: 5%;
+  width: 40%;
 }
 .sidebar a {
   color: white;
   text-decoration: none;
   font-size: 1.8rem;
   position: relative;
-  left: -220%;
-  top: -700%;
+  left: -5%;
+  top: -7%;
 }
 .prof-pic {
   position: absolute;
-  width: 37%;
-  height: 75vh;
-  left: 7%;
-  top: 15%;
+  width: 33%;
+  height: 70%;
+  left: 10%;
+  top: 13%;
   border-radius: 50%;
   margin-bottom: 3%;
   border: 2px solid #4054B2;
 }
 .profile-section {
-  padding-bottom: 6%;
+  margin: 3% 0% 3% 0%;
 }
 .profile-section .inner {
-  width: 55%;
+  width: 60%;
   text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
 }
-.right-side {
-  position: relative;
-  top: 50%;
+.profile-section .prof-titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1% 0%;
+}
+.profile-section .prof-titles h2 {
+  color: black;
+  font-size: 4.3rem;
+}
+.profile-section .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30%;
+  margin-top: 2%;
+}
+.prof-desc h4 {
+  color: #4054B2;
+  font-size: 1.8rem;
+}
+.prof-desc h6 {
+  margin: 4% 0%;
+}
+.fill {
+  height: 50vh;
 }
 i {
-  font-size: 3.2rem;
-  color: #4054B2;
-  padding: 3%;
+  font-size: 3rem;
+  padding: 0% 1% 0% 4%;
 }
 i:hover {
   color: #33D9B2;
+}
+.fa-linkedin {
+  color: #0077B5;
+}
+.fa-linkedin:hover {
+  color: #33D9B2;
+}
+.fa-github {
+  color: black;
+}
+.fa-twitter {
+  color: #00aaee;
 }

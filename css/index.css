@@ -4983,7 +4983,7 @@ header h3 {
     text-decoration: none;
   }
   .headshot.seven {
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/jason-glassbrook.jpg);
     width: 75%;
     margin: 3% auto;
     height: 35vh;
@@ -5213,7 +5213,7 @@ header h3 {
     position: relative;
     left: 10%;
     top: 80%;
-    background-image: url(../img/placehold.jpg);
+    background-image: url(../img/team/jason-glassbrook.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5308,7 +5308,7 @@ header h3 {
 }
 @media (max-width: 600px) {
   .sidebar {
-    width: 33%;
+    width: 41%;
   }
 }
 @media (max-width: 500px) {
@@ -5347,9 +5347,9 @@ header h3 {
 }
 @media (max-width: 1030px) {
   .prof-pic {
-    width: 38%;
-    height: 52%;
-    left: 4%;
+    width: 42%;
+    height: 39%;
+    left: 3%;
     top: 27%;
   }
 }

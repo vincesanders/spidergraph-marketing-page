@@ -1,0 +1,30 @@
+.setProfiles(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    h3, p{
+        visibility: hidden;
+        color:white;
+    }
+
+    &:hover{
+        opacity: .8;
+        border: 2px solid @page-elements;
+
+        h3, p{
+            visibility: visible;
+            text-decoration: none;
+        }
+    }
+}
+
+.setMobileProfiles(){
+    width: 75%;
+    margin: 3% auto;
+    height: 35vh;
+}

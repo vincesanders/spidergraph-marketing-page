@@ -1,0 +1,240 @@
+header {
+    margin: 3% 0% 11% 0%;
+    text-align: center;
+    width: 100%;
+    .banner-btns{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+
+        @media (max-width:500px){
+            width:80%;
+        }
+        @media (max-width:361px){
+            width:87%;
+        }
+        a {
+            width: 100%;
+            padding: 2% 7%;
+            margin: 4% 2% 5% 2%;
+            text-decoration: none;
+            @media (max-width:361px){
+                h6 {
+                font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    h1 {
+        padding: 3% 0% 5% 0%;
+    }
+    h3 {
+        font-size: 2.4rem;
+        letter-spacing: 0.3px;
+        line-height: 48px;
+    }
+}
+
+.green-ball {
+    position: absolute;
+    height: 32vh;
+    width: 17%;
+    left: 75%;
+    top: 77%;
+    @media (max-width: 1300px){
+        left: 80%;
+        top: 65%;
+        height: 29vh;
+    }
+    @media (max-width: 1050px){
+        left: 80%;
+        top: 63%;
+        height: 25vh;
+    }
+    @media (max-width: 960px){
+        left: 80%;
+        top: 59%;
+        height: 23vh;
+    }
+    @media (max-width: 860px){
+        left: 80%;
+        top: 58%;
+        height: 21vh;
+    }
+    @media (max-width: 800px){
+        left: 80%;
+        top: 52%;
+        height: 19vh;
+    }
+    @media (max-width: 720px){
+        display:none;
+    }
+}
+
+.cta-btn {
+    background-color: @main-color;
+    border-radius: 5px;
+    color: white;
+}
+
+.login-btn {
+    border: 1px solid @main-color;
+    border-radius: 5px;
+    color: @main-color;
+    background-color: white;
+}
+
+#about {
+    background-color: @section-bg;
+    padding: 5% 0% 7% 0%;
+}
+
+#team {
+    padding: 3% 0% 7% 0%;
+    h2{
+        padding-bottom: 5%;
+    }
+}
+
+.profiles {
+    display: flex;
+    width: 100%;
+    padding: 3% 0% 15% 0%; 
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    a{
+        width:25%;
+        text-decoration: none;
+        @media (max-width: 550px) {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+    }
+
+    @media (max-width: 550px){
+        flex-flow: nowrap column;
+    }
+}
+
+.headshot {
+    width: 80%;
+    height: 25vh;
+    border-radius: 50%;
+    border: 2px solid @main-color;
+
+    @media (max-width: 850px){
+        height: 20vh;
+    }
+
+    @media (max-width: 680px){
+        height: 17vh;
+    }
+
+    @media (max-width: 550px){
+        &.one{
+            background-image: url(../img/team/shota-hs.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.two{
+            background-image: url(../img/team/laura-giron-crop.gif);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.three{
+            background-image: url(../img/team/patrick-roach.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.four{
+            background-image: url(../img/team/vincent-sanders.JPG);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.five{
+            background-image: url(../img/team/phil-maceachron.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.six{
+            background-image: url(../img/team/logan-reber.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.seven{
+            background-image: url(../img/placehold.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+        &.eight{
+            background-image: url(../img/team/me.jpg);
+            .setMobileProfiles();
+            .setProfiles();
+        }
+    }
+
+    @media (min-width: 550px){
+
+    &.one{
+        position: relative;
+        left: 0%;
+        right: 45%;
+        top: -20%;
+        background-image: url(../img/team/shota-hs.jpg);
+        .setProfiles();
+    }
+    &.two{
+        position: relative;
+        left: 30%;
+        top: -50%;
+        background-image: url(../img/team/laura-giron-crop.gif);
+        .setProfiles();
+    }
+    &.three{
+        position: relative;
+        left: 30%;
+        top: 15%;
+        background-image: url(../img/team/patrick-roach.jpg);
+        .setProfiles();
+    }
+    &.four{
+        position: relative;
+        left: 44%;
+        top: -50%;
+        background-image: url(../img/team/vincent-sanders.JPG);
+        .setProfiles();
+    }
+    &.five{
+        position: relative;
+        left: -30%;
+        top: 50%;
+        background-image: url(../img/team/phil-maceachron.jpg);
+        .setProfiles();
+    }
+    &.six{
+        position: relative;
+        left: -10%;
+        top: 25%;
+        background-image: url(../img/team/logan-reber.jpg);
+        .setProfiles();
+    }
+    &.seven{
+        position: relative;
+        left: 10%;
+        top: 80%;
+        background-image: url(../img/placehold.jpg);
+        .setProfiles();
+    }
+    &.eight{
+        position: relative;
+        left: 30%;
+        top: 35%;
+        background-image: url(../img/team/me.jpg);
+        .setProfiles();
+    }
+  } //min-width
+}

@@ -4769,6 +4769,7 @@ header h3 {
 }
 #team {
   padding: 3% 0% 7% 0%;
+  margin-bottom: 9%;
 }
 #team h2 {
   padding-bottom: 5%;
@@ -4816,7 +4817,7 @@ header h3 {
 @media (max-width: 550px) {
   .headshot.one {
     background-image: url(../img/team/shota-hs.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4844,7 +4845,7 @@ header h3 {
   }
   .headshot.two {
     background-image: url(../img/team/laura-giron-crop.gif);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4872,7 +4873,7 @@ header h3 {
   }
   .headshot.three {
     background-image: url(../img/team/patrick-roach.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4900,7 +4901,7 @@ header h3 {
   }
   .headshot.four {
     background-image: url(../img/team/vincent-sanders.JPG);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4928,7 +4929,7 @@ header h3 {
   }
   .headshot.five {
     background-image: url(../img/team/phil-maceachron.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4956,7 +4957,7 @@ header h3 {
   }
   .headshot.six {
     background-image: url(../img/team/logan-reber.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -4984,7 +4985,7 @@ header h3 {
   }
   .headshot.seven {
     background-image: url(../img/team/jason-glassbrook.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -5012,7 +5013,7 @@ header h3 {
   }
   .headshot.eight {
     background-image: url(../img/team/me.jpg);
-    width: 75%;
+    width: 100%;
     margin: 3% auto;
     height: 35vh;
     display: flex;
@@ -5266,6 +5267,14 @@ header h3 {
     text-decoration: none;
   }
 }
+footer {
+  background-color: #4054B2;
+  padding: 2% 0%;
+}
+footer p {
+  color: #FDFDFF;
+  text-align: right;
+}
 .profile-cont {
   display: flex;
   flex-direction: row;
@@ -5296,7 +5305,7 @@ header h3 {
     width: 50%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .sidebar {
     width: 55%;
   }
@@ -5322,7 +5331,7 @@ header h3 {
 .prof-pic {
   position: absolute;
   width: 33%;
-  height: 70%;
+  height: auto;
   left: 10%;
   top: 13%;
   border-radius: 50%;
@@ -5332,7 +5341,6 @@ header h3 {
 @media (max-width: 1200px) {
   .prof-pic {
     width: 35%;
-    height: 61%;
     left: 6%;
     top: 18%;
   }
@@ -5340,7 +5348,6 @@ header h3 {
 @media (max-width: 1050px) {
   .prof-pic {
     width: 35%;
-    height: 53%;
     left: 5%;
     top: 23%;
   }
@@ -5348,20 +5355,15 @@ header h3 {
 @media (max-width: 1030px) {
   .prof-pic {
     width: 42%;
-    height: 39%;
     left: 3%;
     top: 27%;
   }
 }
 @media (max-width: 1000px) {
-  .prof-pic {
-    height: 52%;
-  }
 }
 @media (max-width: 850px) {
   .prof-pic {
     width: 38%;
-    height: 46%;
     left: 5%;
     top: 25%;
   }
@@ -5369,7 +5371,6 @@ header h3 {
 @media (max-width: 780px) {
   .prof-pic {
     width: 41%;
-    height: 37%;
     left: 4%;
     top: 28%;
   }
@@ -5377,7 +5378,6 @@ header h3 {
 @media (max-width: 700px) {
   .prof-pic {
     width: 38%;
-    height: 40%;
     left: 5%;
     top: 29%;
   }
@@ -5385,7 +5385,6 @@ header h3 {
 @media (max-width: 600px) {
   .prof-pic {
     width: 35%;
-    height: 29%;
     left: 41%;
     top: 1%;
   }
@@ -5393,7 +5392,6 @@ header h3 {
 @media (max-width: 500px) {
   .prof-pic {
     width: 50%;
-    height: 26%;
     left: 26%;
     top: 3%;
   }
@@ -5444,11 +5442,16 @@ header h3 {
   margin: 4% 0%;
 }
 .fill {
-  height: 40vh;
+  height: 34vh;
 }
 @media (max-width: 750px) {
   .fill {
     height: 30vh;
+  }
+}
+@media (max-width: 500px) {
+  .fill {
+    height: 35vh;
   }
 }
 i {
@@ -5477,8 +5480,10 @@ i:hover {
   .mobile-return {
     visibility: visible;
     margin-top: 5%;
+    margin-bottom: 5%;
   }
   .mobile-return a {
     font-size: 1.6rem;
+    margin-bottom: 2%;
   }
 }

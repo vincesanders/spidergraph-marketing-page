@@ -5305,7 +5305,7 @@ footer p {
     width: 50%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .sidebar {
     width: 55%;
   }
@@ -5442,11 +5442,16 @@ footer p {
   margin: 4% 0%;
 }
 .fill {
-  height: 40vh;
+  height: 34vh;
 }
 @media (max-width: 750px) {
   .fill {
     height: 30vh;
+  }
+}
+@media (max-width: 500px) {
+  .fill {
+    height: 35vh;
   }
 }
 i {
@@ -5475,8 +5480,10 @@ i:hover {
   .mobile-return {
     visibility: visible;
     margin-top: 5%;
+    margin-bottom: 5%;
   }
   .mobile-return a {
     font-size: 1.6rem;
+    margin-bottom: 2%;
   }
 }

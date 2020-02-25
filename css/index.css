@@ -4733,22 +4733,24 @@ header h3 {
 }
 #team {
   padding: 3% 0% 7% 0%;
-  margin-bottom: 9%;
+  margin-bottom: 1%;
 }
 #team h2 {
   padding-bottom: 5%;
 }
 .profiles {
   display: flex;
-  width: 100%;
-  padding: 3% 0% 15% 0%;
+  width: 110%;
+  padding: 3% 0% 3% 0%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
+  margin-right: -10%;
+  margin-top: 4%;
 }
 .profiles a {
-  width: 25%;
+  width: 22%;
   text-decoration: none;
 }
 @media (max-width: 550px) {
@@ -4759,42 +4761,53 @@ header h3 {
 }
 @media (max-width: 550px) {
   .profiles {
-    /* flex-flow: nowrap column; */
+    
   }
 }
 .headshot {
-  width: 80%;
-  /* height: 25vh; */
+  width: 200px;
   height: auto;
   padding-top: 50%;
   border-radius: 50%;
   border: 2px solid #4054B2;
   padding-bottom: 25px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   .headshot {
-    /* height: 20vh; */
-    /* padding-top: 45%; */
-    height: 85%;
-    width: 85%;
+    /* height: 85%; */
+    /* padding-top: 30%;
+    width: 85%; */
+    width: 180px;
+  }
+}
+@media (max-width: 950px) {
+  .headshot {
+    width: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .headshot {
+    width: 125px;
+    height: 125px;
   }
 }
 @media (max-width: 680px) {
   .headshot {
-    /* height: 17vh; */
-    height: 65%;
+    padding-top: 15%;
+    padding-bottom: 18px;
+    width: 105px;
+    height: 105px;
   }
 }
 @media (max-width: 550px) {
   .headshot {
+    width: 250px;
     height: 250px;
   }
   .headshot.one {
-
     background-image: url(../img/team/shota-hs.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4822,7 +4835,6 @@ header h3 {
     background-image: url(../img/team/laura-giron-crop.gif);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4850,7 +4862,6 @@ header h3 {
     background-image: url(../img/team/patrick-roach.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4878,7 +4889,6 @@ header h3 {
     background-image: url(../img/team/vincent-sanders.JPG);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4906,7 +4916,6 @@ header h3 {
     background-image: url(../img/team/phil-maceachron.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4934,7 +4943,6 @@ header h3 {
     background-image: url(../img/team/logan-reber.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4962,7 +4970,6 @@ header h3 {
     background-image: url(../img/team/jason-glassbrook.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4990,7 +4997,6 @@ header h3 {
     background-image: url(../img/team/me.jpg);
     max-width: 100%;
     margin: 3% auto;
-    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5015,12 +5021,16 @@ header h3 {
     text-decoration: none;
   }
 }
+
+/* Screens larger than 550px */
 @media (min-width: 550px) {
+  .two, .four, .six, .eight {
+    margin-top: -80px;
+  }
+  .headshot {
+    margin-bottom: 100px;
+  }
   .headshot.one {
-    position: relative;
-    left: 0%;
-    right: 45%;
-    top: -20%;
     background-image: url(../img/team/shota-hs.jpg);
     display: flex;
     flex-direction: column;
@@ -5048,9 +5058,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.two {
-    position: relative;
-    left: 30%;
-    top: -50%;
     background-image: url(../img/team/laura-giron-crop.gif);
     display: flex;
     flex-direction: column;
@@ -5076,9 +5083,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.three {
-    position: relative;
-    left: 30%;
-    top: 15%;
     background-image: url(../img/team/patrick-roach.jpg);
     display: flex;
     flex-direction: column;
@@ -5104,9 +5108,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.four {
-    position: relative;
-    left: 44%;
-    top: -50%;
     background-image: url(../img/team/vincent-sanders.JPG);
     display: flex;
     flex-direction: column;
@@ -5132,9 +5133,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.five {
-    position: relative;
-    left: -30%;
-    top: 50%;
     background-image: url(../img/team/phil-maceachron.jpg);
     display: flex;
     flex-direction: column;
@@ -5160,9 +5158,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.six {
-    position: relative;
-    left: -10%;
-    top: 25%;
     background-image: url(../img/team/logan-reber.jpg);
     display: flex;
     flex-direction: column;
@@ -5188,9 +5183,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.seven {
-    position: relative;
-    left: 10%;
-    top: 80%;
     background-image: url(../img/team/jason-glassbrook.jpg);
     display: flex;
     flex-direction: column;
@@ -5216,9 +5208,6 @@ header h3 {
     text-decoration: none;
   }
   .headshot.eight {
-    position: relative;
-    left: 30%;
-    top: 35%;
     background-image: url(../img/team/me.jpg);
     display: flex;
     flex-direction: column;

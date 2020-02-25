@@ -4706,46 +4706,10 @@ header h3 {
   line-height: 48px;
 }
 .green-ball {
-  position: absolute;
-  height: 32vh;
+  box-sizing: border-box;
   width: 17%;
-  left: 75%;
-  top: 77%;
-}
-@media (max-width: 1300px) {
-  .green-ball {
-    left: 80%;
-    top: 65%;
-    height: 29vh;
-  }
-}
-@media (max-width: 1050px) {
-  .green-ball {
-    left: 80%;
-    top: 63%;
-    height: 25vh;
-  }
-}
-@media (max-width: 960px) {
-  .green-ball {
-    left: 80%;
-    top: 59%;
-    height: 23vh;
-  }
-}
-@media (max-width: 860px) {
-  .green-ball {
-    left: 80%;
-    top: 58%;
-    height: 21vh;
-  }
-}
-@media (max-width: 800px) {
-  .green-ball {
-    left: 80%;
-    top: 52%;
-    height: 19vh;
-  }
+  margin-bottom: -21%;
+  margin-left: 65%;
 }
 @media (max-width: 720px) {
   .green-ball {
@@ -4795,31 +4759,42 @@ header h3 {
 }
 @media (max-width: 550px) {
   .profiles {
-    flex-flow: nowrap column;
+    /* flex-flow: nowrap column; */
   }
 }
 .headshot {
   width: 80%;
-  height: 25vh;
+  /* height: 25vh; */
+  height: auto;
+  padding-top: 50%;
   border-radius: 50%;
   border: 2px solid #4054B2;
+  padding-bottom: 25px;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .headshot {
-    height: 20vh;
+    /* height: 20vh; */
+    /* padding-top: 45%; */
+    height: 85%;
+    width: 85%;
   }
 }
 @media (max-width: 680px) {
   .headshot {
-    height: 17vh;
+    /* height: 17vh; */
+    height: 65%;
   }
 }
 @media (max-width: 550px) {
+  .headshot {
+    height: 250px;
+  }
   .headshot.one {
+
     background-image: url(../img/team/shota-hs.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4845,9 +4820,9 @@ header h3 {
   }
   .headshot.two {
     background-image: url(../img/team/laura-giron-crop.gif);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4873,9 +4848,9 @@ header h3 {
   }
   .headshot.three {
     background-image: url(../img/team/patrick-roach.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4901,9 +4876,9 @@ header h3 {
   }
   .headshot.four {
     background-image: url(../img/team/vincent-sanders.JPG);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4929,9 +4904,9 @@ header h3 {
   }
   .headshot.five {
     background-image: url(../img/team/phil-maceachron.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4957,9 +4932,9 @@ header h3 {
   }
   .headshot.six {
     background-image: url(../img/team/logan-reber.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4985,9 +4960,9 @@ header h3 {
   }
   .headshot.seven {
     background-image: url(../img/team/jason-glassbrook.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5013,9 +4988,9 @@ header h3 {
   }
   .headshot.eight {
     background-image: url(../img/team/me.jpg);
-    width: 100%;
+    max-width: 100%;
     margin: 3% auto;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -5055,11 +5030,13 @@ header h3 {
     background-size: cover;
     text-align: center;
     text-decoration: none;
+    
   }
   .headshot.one h3,
   .headshot.one p {
     visibility: hidden;
     color: white;
+    
   }
   .headshot.one:hover {
     opacity: 0.8;
